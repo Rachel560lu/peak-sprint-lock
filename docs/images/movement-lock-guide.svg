@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="490" viewBox="0 0 1080 490" role="img" aria-labelledby="title desc">
+  <title id="title">PEAK Sprint Lock — walking and running controls</title>
+  <desc id="desc">Hold W and press Caps Lock for AUTO WALK. Hold Shift and W and press Caps Lock for AUTO RUN. Release the keys to continue moving. Press Caps Lock again or S to stop. This is an illustration, not a gameplay screenshot.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10282e"/><stop offset="1" stop-color="#193c43"/></linearGradient>
+    <style>
+      text{font-family:Segoe UI,Arial,sans-serif} .title{fill:#f3f5eb;font-size:30px;font-weight:700}.sub{fill:#afc8c9;font-size:16px}.label{font-size:16px;font-weight:700;letter-spacing:2px}.key{fill:#f3f5eb;font-size:19px;font-weight:600;text-anchor:middle}.plus{fill:#93b0b3;font-size:24px;text-anchor:middle}.body{fill:#d7e5e3;font-size:17px}.small{fill:#94afb2;font-size:13px}.hud{font-size:22px;font-weight:700;letter-spacing:2px}
+    </style>
+  </defs>
+  <rect width="1080" height="490" rx="24" fill="url(#bg)"/>
+  <path d="M795 85L879 8l104 114M922 120l74-72 84 87" fill="none" stroke="#31575c" stroke-width="2"/>
+  <text x="42" y="57" class="title">PEAK Sprint Lock</text>
+  <text x="42" y="86" class="sub">Choose your pace. Release the keys. Keep moving.</text>
+  <rect x="32" y="112" width="496" height="252" rx="18" fill="#102c32" stroke="#3e6265"/>
+  <rect x="552" y="112" width="496" height="252" rx="18" fill="#102c32" stroke="#3e6265"/>
+  <text x="58" y="149" class="label" fill="#98e6bc">01 / WALKING LOCK</text>
+  <text x="578" y="149" class="label" fill="#f6cf88">02 / RUNNING LOCK</text>
+  <g fill="#27464d" stroke="#668389" stroke-width="1.5">
+    <rect x="58" y="174" width="64" height="48" rx="9"/>
+    <rect x="158" y="174" width="142" height="48" rx="9"/>
+    <rect x="578" y="174" width="90" height="48" rx="9"/>
+    <rect x="706" y="174" width="64" height="48" rx="9"/>
+    <rect x="808" y="174" width="142" height="48" rx="9"/>
+  </g>
+  <text x="90" y="205" class="key">W</text><text x="140" y="206" class="plus">+</text><text x="229" y="205" class="key">Caps Lock</text>
+  <text x="623" y="205" class="key">Shift</text><text x="688" y="206" class="plus">+</text><text x="738" y="205" class="key">W</text><text x="789" y="206" class="plus">+</text><text x="879" y="205" class="key">Caps Lock</text>
+  <text x="58" y="251" class="body">Hold W, tap Caps Lock, then release.</text>
+  <text x="578" y="251" class="body">Hold Shift + W, tap Caps Lock, then release.</text>
+  <rect x="58" y="275" width="188" height="48" rx="24" fill="#203f38"/>
+  <rect x="578" y="275" width="188" height="48" rx="24" fill="#413b2e"/>
+  <circle cx="81" cy="299" r="5" fill="#98e6bc"/><text x="98" y="307" class="hud" fill="#98e6bc">AUTO WALK</text>
+  <circle cx="601" cy="299" r="5" fill="#f6cf88"/><text x="618" y="307" class="hud" fill="#f6cf88">AUTO RUN</text>
+  <text x="270" y="304" class="body">Keep walking</text><text x="790" y="304" class="body">Keep running</text>
+  <path d="M48 387H1032" stroke="#3e6265"/>
+  <text x="58" y="422" class="body"><tspan fill="#f3f5eb" font-weight="700">STOP</tspan><tspan dx="15">Caps Lock again or S</tspan></text>
+  <text x="578" y="422" class="body"><tspan fill="#f3f5eb" font-weight="700">STEER</tspan><tspan dx="15">Mouse + A / D</tspan></text>
+  <text x="58" y="459" class="small">Control illustration · Default key bindings · Cancel and reactivate to change pace</text>
+</svg>

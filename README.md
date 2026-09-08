@@ -6,6 +6,10 @@
 
 A walking and running lock mod built for **PEAK 2.4.b / 3e62ee214**. Both modes have passed local gameplay testing. Multiplayer and compatibility with other movement/input mods have not yet been verified.
 
+![Walking and running lock controls](docs/images/movement-lock-guide.svg)
+
+*Control illustration using the default key bindings; not a gameplay screenshot.*
+
 ### Download and distribution
 
 Available on [Thunderstore / Rachel560lu / PeakSprintLock](https://thunderstore.io/c/peak/p/Rachel560lu/PeakSprintLock/). Source is stored in Rachel560lu's private GitHub repository; no open-source license is currently included.
@@ -62,6 +66,10 @@ Automated test success does not establish completion of every gameplay check abo
 ## 简体中文
 
 面向本机 PEAK **2.4.b / 3e62ee214** 编译的走路/奔跑锁定 Mod。用户已确认两种模式通过实机测试；联机及其他输入 Mod 兼容性尚未验证。
+
+![走路锁定与奔跑锁定操作示意图](docs/images/movement-lock-guide.svg)
+
+*默认按键的操作示意图，非游戏实机截图：W＋Caps Lock 锁定走路，Shift＋W＋Caps Lock 锁定奔跑。*
 
 ### 分发
 
