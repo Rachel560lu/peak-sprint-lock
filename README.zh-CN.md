@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/mountain-run.png" width="144" alt="雪山前奔跑的荧光绿人物" />
+  <img src="docs/images/peak-header.jpg" width="920" alt="PEAK 登山角色与山峰横幅" />
 </p>
 
 <h1 align="center">PEAK Sprint Lock</h1>

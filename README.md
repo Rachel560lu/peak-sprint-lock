@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/mountain-run.png" width="144" alt="A lime-green runner in front of snow-capped mountains" />
+  <img src="docs/images/peak-header.jpg" width="920" alt="PEAK artwork featuring climbers overlooking a mountain" />
 </p>
 
 <h1 align="center">PEAK Sprint Lock</h1>
