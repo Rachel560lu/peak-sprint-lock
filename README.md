@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/peak-header.jpg" width="920" alt="PEAK artwork featuring climbers overlooking a mountain" />
+  <img src="docs/images/peak-sprint-lock-header.png" width="920" alt="PEAK Sprint Lock Mod banner featuring climbers and a mountain" />
 </p>
 
 <h1 align="center">PEAK Sprint Lock</h1>
