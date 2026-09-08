@@ -1,14 +1,75 @@
 # PEAK Sprint Lock — 0.1.1
 
+[English](#english) | [简体中文](#简体中文)
+
+## English
+
+A walking and running lock mod built for **PEAK 2.4.b / 3e62ee214**. Both modes have passed local gameplay testing. Multiplayer and compatibility with other movement/input mods have not yet been verified.
+
+### Download and distribution
+
+Available on [Thunderstore / Rachel560lu / PeakSprintLock](https://thunderstore.io/c/peak/p/Rachel560lu/PeakSprintLock/). Source is stored in Rachel560lu's private GitHub repository; no open-source license is currently included.
+
+`dist/PeakSprintLock-0.1.1.zip` is the standard Thunderstore-format package. Build outputs are excluded from this repository. Player-facing instructions are in [packaging/README.md](packaging/README.md). After building, run `scripts/package.ps1` to create the ZIP and verify the manifest version, icon dimensions and SHA-256 of every packaged file. The published DLL is the same version used in the successful 0.1.1 gameplay test.
+
+### Controls
+
+- Hold your game's forward key and press **Caps Lock** to lock walking. The HUD displays **AUTO WALK**.
+- Hold your game's sprint key (Shift by default) and forward key, then press **Caps Lock** to lock running. The HUD displays **AUTO RUN**.
+- The mode is captured at activation and persists after releasing the keys. Pressing or releasing Shift while locked does not switch modes; cancel and activate again to change modes.
+- Press Caps Lock again or your game's backward key to cancel. Movement actions follow in-game key bindings.
+- Use the mouse to steer and A/D to strafe. Jumping preserves the lock.
+- Climbing (including ropes and vines), incapacitation, death, blocking menus/wheels, pause, loss of focus and scene changes cancel the lock. Empty stamina cancels running lock only; walking lock remains available.
+- Crouch input also cancels. A cancelled lock never resumes automatically.
+- No obstacle avoidance, cliff braking or automatic navigation is provided. Caps Lock may also change your system's capitalization state; the toggle key is configurable.
+
+### Installation and configuration
+
+In a compatible mod manager, select PEAK, install **PeakSprintLock** from Thunderstore with its **BepInExPack_PEAK** dependency, and launch using **Start modded**.
+
+For manual installation into an existing BepInEx 5 PEAK profile, close the game and place `PeakSprintLock.dll` in `BepInEx/plugins/PeakSprintLock/`. Launch using that modded profile. Do not overwrite game assemblies. To uninstall, close the game and remove the plugin through your manager or delete its plugin folder.
+
+The first launch generates `BepInEx/config/dev.midor.peaksprintlock.cfg`. Settings include `ToggleKey` (a Unity Input System Key name), `RequireForward`, `ShowHud` and `CancelWhenOutOfStamina`. Activation currently uses the keyboard; controller and other movement-mod compatibility are not guaranteed.
+
+### Building and testing
+
+`scripts/build.ps1` uses .NET 8 SDK and local PEAK/BepInEx assemblies. Its default paths point to the original development machine; override `Dotnet`, `PeakManagedDir` and `BepInExCoreDir` for your installation. Game assemblies and SDK files are not included in the repository.
+
+Run the standalone state-policy tests with:
+
+```powershell
+dotnet run --project tests/Tests.csproj -c Release
+```
+
+The plugin merges `movementInput` and `sprintIsPressed` in a Postfix on `CharacterInput.Sample(bool)`. The game's `SetMovementState` and `CalculateWorldMovementDir` continue handling sprint eligibility, stamina and physics. Patches only affect the local player's character. Private game methods are accessed through Harmony delegates cached at startup.
+
+`RuntimeDriver` lives on a separate persistent GameObject, so frame callbacks do not depend on the BepInEx plugin host. Input resets, scene transitions and focus events clear the lock.
+
+### In-game verification
+
+Use a fresh BepInEx profile containing only this mod and test on clear ground in the offline airport before continuing a saved expedition.
+
+1. Check the current process's diagnostic file for `START`, `FIRST_FRAME`, and `FIRST_SAMPLE` after entering a character.
+2. Press W + Caps Lock and release: expect AUTO WALK and continued walking; backward input stops it. Then press Shift + W + Caps Lock and release: expect AUTO RUN and continued running.
+3. Check repeated toggling, strafing, mouse steering, jumping, pause and switching away from the game. Returning after cancellation must leave the lock OFF.
+4. Test climbing, empty-stamina cancellation for running, and scene transitions in a safe location.
+5. Compare speed and stamina with manual running over the same route, then separately test host/client multiplayer.
+
+With `[Diagnostics] Enabled = true`, local logs are written to `BepInEx/SprintLockDiagnostics/session-<PID>-<UTC>.log`. They include version, assembly MVIDs, state transitions and one sample per second of actual/merged input, position and stamina while locked. Logs are not uploaded.
+
+Automated test success does not establish completion of every gameplay check above. See [docs/verification.md](docs/verification.md) for recorded results.
+
+## 简体中文
+
 面向本机 PEAK **2.4.b / 3e62ee214** 编译的走路/奔跑锁定 Mod。用户已确认两种模式通过实机测试；联机及其他输入 Mod 兼容性尚未验证。
 
-## 分发
+### 分发
 
 `dist/PeakSprintLock-0.1.1.zip` 是标准 Thunderstore 格式安装包，可分享给朋友或上传到 Thunderstore。玩家说明在 `packaging/README.md`。运行 `scripts/package.ps1` 可重新打包并验证清单版本、图标尺寸和 ZIP 每个文件的 SHA-256。包中 DLL 与通过实机测试的 0.1.1 一致。
 
 已发布到 [Thunderstore / Rachel560lu / PeakSprintLock](https://thunderstore.io/c/peak/p/Rachel560lu/PeakSprintLock/)。源码保存在 Rachel560lu 的私有 GitHub 仓库；当前不包含开源许可证。
 
-## 操作
+### 操作
 
 - 按住游戏的前进键，再按 **Caps Lock**：锁定走路，HUD 显示 **AUTO WALK**。
 - 按住游戏的冲刺键（默认 Shift）＋前进键，再按 **Caps Lock**：锁定奔跑，HUD 显示 **AUTO RUN**。
@@ -19,7 +80,7 @@
 - 蹲下输入也取消。取消后不会自动恢复锁定。
 - 不提供避障、悬崖刹车或自动导航。Caps Lock 仍可能改变系统大小写状态，可在配置中改键。
 
-## 安装原型
+### 安装原型
 
 需要已正常工作的 BepInEx 5 PEAK 配置。在游戏退出后，将 `PeakSprintLock.dll` 放入该配置的 `BepInEx/plugins/PeakSprintLock/`，然后通过对应 Mod 配置启动游戏。
 
@@ -27,7 +88,7 @@
 
 首次加载生成 `BepInEx/config/dev.midor.peaksprintlock.cfg`。支持 `ToggleKey`（Unity Input System Key 名称）、`RequireForward`、`ShowHud`、`CancelWhenOutOfStamina`。原型为键盘开启；尚未承诺手柄或其他移动 Mod 兼容。
 
-## 构建与测试
+### 构建与测试
 
 `scripts/build.ps1` 使用本机已有 .NET 8 SDK 和游戏/BepInEx 程序集；路径均可通过参数覆盖。不要求安装新的 SDK，不下载依赖包。
 
@@ -37,7 +98,7 @@
 
 `RuntimeDriver` 位于独立持久 GameObject，避免依赖插件宿主的帧回调。输入 reset、场景和焦点事件清理锁定。
 
-## 实机验证
+### 实机验证
 
 建议使用全新、只有该原型的 BepInEx 测试配置，在离线机场空旷地面测试，不要直接继续已有登山存档。
 
