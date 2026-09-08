@@ -4,7 +4,7 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <Version>0.1.1</Version>
+    <Version>0.2.0</Version>
     <PeakManagedDir Condition="'$(PeakManagedDir)' == ''">D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed</PeakManagedDir>
     <BepInExCoreDir Condition="'$(BepInExCoreDir)' == ''">C:\Users\midor\AppData\Roaming\r2modmanPlus-local\PEAK\profiles\PeakItemInsight-Test\BepInEx\core</BepInExCoreDir>
   </PropertyGroup>

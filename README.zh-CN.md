@@ -80,6 +80,8 @@
 
 ## 更多
 
+**开发中：** [队友轨迹原型（0.2.0）](docs/trail-prototype.md)。仅源码开发版，已做逻辑测试，尚未实机验证；上方 Thunderstore 下载仍为 0.1.1。
+
 [开发与测试](docs/development.md) · [更新日志](CHANGELOG.md) · [反馈问题](https://github.com/Rachel560lu/peak-sprint-lock/issues)
 
 反馈问题时，请附上 PEAK 版本、Mod 版本、其他已安装 Mod 和复现步骤。当前仓库不包含开源许可证。

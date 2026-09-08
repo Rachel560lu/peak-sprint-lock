@@ -80,6 +80,8 @@ The first launch creates `BepInEx/config/dev.midor.peaksprintlock.cfg`.
 
 ## More
 
+**In development:** [teammate trail preview (0.2.0)](docs/trail-prototype.md). Source only; logic-tested, not gameplay-tested. The Thunderstore download above remains 0.1.1.
+
 [Development & testing](docs/development.md) · [Changelog](CHANGELOG.md) · [Report an issue](https://github.com/Rachel560lu/peak-sprint-lock/issues)
 
 For bug reports, include your PEAK version, mod version, other installed mods and steps to reproduce. No open-source license is currently included.

@@ -61,4 +61,5 @@ state = new LockState(); state.Step(true, true, true, true, null, true);
 Check(!state.Active, "backward wins over sprint activation");
 LockState.Merge(1, 0, false, true, false, out x, out y, out sprint);
 Check(Math.Abs(x*x+y*y-1)<.00001 && !sprint, "walking diagonal limited to native speed");
+TrailTests.Run(Check);
 Console.WriteLine($"TOTAL {count} passed");
