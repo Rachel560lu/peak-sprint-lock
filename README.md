@@ -1,5 +1,9 @@
 # PEAK Sprint Lock — 0.1.1
 
+<p align="center">
+  <img src="docs/images/mountain-run.png" width="320" alt="Abstract lime-green runner with speed lines in front of snow-capped mountains / 奔跑人物与雪山的抽象插图" />
+</p>
+
 [English](#english) | [简体中文](#简体中文)
 
 ## English

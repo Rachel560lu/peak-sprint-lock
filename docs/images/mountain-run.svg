@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Mountain Run</title>
+  <desc id="desc">A lime-green runner and speed lines in front of geometric snow-capped mountains on a dark teal square.</desc>
+  <rect width="512" height="512" rx="44" fill="#11282f"/>
+  <path d="M49 382 215 105 379 382Z" fill="#355c66"/>
+  <path d="M245 382 355 185 466 382Z" fill="#284851"/>
+  <path d="M171 179 215 105 261 182 230 169 208 189 191 176Z" fill="#d6e9df"/>
+  <path d="M331 229 355 185 379 230 359 221 347 237Z" fill="#8eb2b3"/>
+  <g fill="none" stroke="#11282f" stroke-width="33" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M293 238 260 302 302 335 323 388M260 302 224 353 163 365M284 253 328 286 365 268M283 253 236 232 210 263"/>
+  </g>
+  <g fill="none" stroke="#9be66a" stroke-width="19" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M293 238 260 302 302 335 323 388M260 302 224 353 163 365M284 253 328 286 365 268M283 253 236 232 210 263"/>
+  </g>
+  <circle cx="309" cy="204" r="27" fill="#11282f"/>
+  <circle cx="309" cy="204" r="21" fill="#9be66a"/>
+  <g fill="none" stroke="#9be66a" stroke-width="10" stroke-linecap="round">
+    <path d="M100 262H166M83 289H145M106 316H158"/>
+  </g>
+  <path d="M76 427H436" fill="none" stroke="#6c9395" stroke-width="5" stroke-linecap="round"/>
+  <path d="M216 415 230 427 216 439M247 415 261 427 247 439M278 415 292 427 278 439" fill="none" stroke="#9be66a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
