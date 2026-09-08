@@ -1,0 +1,7 @@
+{
+  "name": "PeakSprintLock",
+  "version_number": "0.1.1",
+  "website_url": "",
+  "description": "Lock walking with Forward + CapsLock, or running with Sprint + Forward + CapsLock. Keep steering and cancel instantly.",
+  "dependencies": ["BepInEx-BepInExPack_PEAK-5.4.75301"]
+}

@@ -1,0 +1,8 @@
+bin/
+obj/
+**/bin/
+**/obj/
+.dotnet-home/
+test-profile/
+docs/*-il.txt
+dist/
