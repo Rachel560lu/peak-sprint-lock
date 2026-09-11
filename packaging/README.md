@@ -64,7 +64,7 @@ Caps Lock may also change your system's capitalization state. Change ToggleKey i
 
 ## Compatibility and support / 兼容与反馈
 
-Version **0.1.1** was built and locally gameplay-tested on **Windows, PEAK 2.4.b (3e62ee214), BepInEx runtime 5.4.23.3**. Walking and running lock were confirmed by the tester. Host/client multiplayer, controller activation, and compatibility with other movement/input mods have not been independently validated. Game updates may require an updated mod.
+Version **0.1.2** contains the same walking and running behavior gameplay-tested on **Windows, PEAK 2.4.b (3e62ee214), BepInEx runtime 5.4.23.3**; this update changes the package artwork. Walking and running lock were confirmed by the tester. Host/client multiplayer, controller activation, and compatibility with other movement/input mods have not been independently validated. Game updates may require an updated mod.
 
 已在上述版本通过本机走路/奔跑锁定实机测试。尚未独立验证联机房主/客户端、手柄开启和其他移动 Mod 兼容性。
 

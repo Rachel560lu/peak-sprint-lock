@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 namespace PeakSprintLock;
 
-[BepInPlugin(Id, "PEAK Sprint Lock", "0.1.1")]
+[BepInPlugin(Id, "PEAK Sprint Lock", "0.1.2")]
 public sealed class Plugin : BaseUnityPlugin
 {
     public const string Id = "dev.midor.peaksprintlock";
@@ -49,7 +49,7 @@ public sealed class Plugin : BaseUnityPlugin
             var folder = Path.Combine(Paths.BepInExRootPath, "SprintLockDiagnostics");
             Directory.CreateDirectory(folder);
             tracePath = Path.Combine(folder, $"session-{Process.GetCurrentProcess().Id}-{DateTime.UtcNow:yyyyMMddTHHmmss}.log");
-            Trace($"START version=0.1.1 gameMvid={typeof(Character).Module.ModuleVersionId} pluginMvid={typeof(Plugin).Module.ModuleVersionId}");
+            Trace($"START version=0.1.2 gameMvid={typeof(Character).Module.ModuleVersionId} pluginMvid={typeof(Plugin).Module.ModuleVersionId}");
             harmony = new Harmony(Id);
             harmony.PatchAll(typeof(Plugin).Assembly);
             driver = new GameObject("PeakSprintLock.Runtime");
