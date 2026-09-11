@@ -10,7 +10,7 @@ Lock walking or running, release the keys, and keep steering.</p>
 <p align="center">
   <a href="https://thunderstore.io/c/peak/p/Rachel560lu/PeakSprintLock/"><img src="https://img.shields.io/badge/Download-Thunderstore-8cdb65?style=for-the-badge" alt="Download on Thunderstore" /></a>
   <a href="https://thunderstore.io/c/peak/p/Rachel560lu/PeakSprintLock/"><img src="https://img.shields.io/thunderstore/dt/Rachel560lu/PeakSprintLock?style=for-the-badge&amp;color=8cdb65&amp;cacheSeconds=300" alt="Thunderstore total downloads" /></a>
-  <img src="https://img.shields.io/badge/version-0.1.1-345b63?style=for-the-badge" alt="Version 0.1.1" />
+  <img src="https://img.shields.io/badge/version-0.1.2-345b63?style=for-the-badge" alt="Version 0.1.2" />
   <img src="https://img.shields.io/badge/BepInEx-5-345b63?style=for-the-badge" alt="BepInEx 5" />
 </p>
 
@@ -81,7 +81,7 @@ The first launch creates `BepInEx/config/dev.midor.peaksprintlock.cfg`.
 
 ## More
 
-**In development:** [teammate trail preview (0.2.0)](docs/trail-prototype.md). Source only; logic-tested, not gameplay-tested. The Thunderstore download above remains 0.1.1.
+**In development:** [teammate trail preview (0.2.0)](docs/trail-prototype.md). Source only; logic-tested, not gameplay-tested. The Thunderstore download above remains the stable 0.1.2 release and does not include the trail prototype.
 
 [Development & testing](docs/development.md) · [Changelog](CHANGELOG.md) · [Report an issue](https://github.com/Rachel560lu/peak-sprint-lock/issues)
 

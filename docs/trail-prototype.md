@@ -2,7 +2,7 @@
 
 [English homepage](../README.md) · [中文主页](../README.zh-CN.md)
 
-The source build now includes a display-only teammate trail. Thunderstore remains at 0.1.1; that download does not contain this feature. No game was launched for this prototype's verification.
+The source build now includes a display-only teammate trail. Thunderstore remains on the stable 0.1.2 release; that download does not contain this feature. No game was launched for this prototype's verification.
 
 ## Controls / 操作
 
@@ -32,6 +32,6 @@ Release compilation against the installed PEAK assemblies and engine-independent
 
 尚未实机验证：队友选择、游戏原生输入阻断与攀爬的关系、材质/遮挡/线条高度、远端位置同步、场景生命周期和与其他 Mod 共存。代码测试通过不代表这些项目已通过。
 
-Build with `scripts/build.ps1`. The development DLL is `bin/Release/netstandard2.1/PeakSprintLock.dll`, version 0.2.0. Published packaging metadata remains 0.1.1; do not package the prototype as the validated 0.1.1 release.
+Build with `scripts/build.ps1`. The development DLL is `bin/Release/netstandard2.1/PeakSprintLock.dll`, version 0.2.0. Published packaging metadata remains 0.1.2; do not package the prototype as the stable 0.1.2 release.
 
 Validation result: Release build succeeded with 0 warnings and 0 errors; 86 checks passed (58 existing movement-lock checks and 28 trail checks). No in-game testing performed. / 验证结果：Release 编译零警告、零错误；86 项检查通过（原有移动锁定 58 项、轨迹 28 项），未启动游戏。
